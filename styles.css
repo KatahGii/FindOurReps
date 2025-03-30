@@ -1,0 +1,71 @@
+/* styles.css - Minimal Functional Version */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header, .card, footer {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.input-group {
+  margin: 15px 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.official-block {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.detail-item {
+  margin: 10px 0;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  #street {
+    grid-column: 1 / -1;
+  }
+}
